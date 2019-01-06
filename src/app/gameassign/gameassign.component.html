@@ -1,0 +1,12 @@
+<div class="container">
+  <div class="row">
+    {{nuber}}
+    <app-game (startGame)="start($event)"  (stopGame)="stop($event)"></app-game>
+    <p [innerText]="nuber"></p>
+   
+</div>
+<div class="row" *ngIf="nuber%2==0">
+    <app-even [num]="nuber"></app-even>
+</div>
+ 
+</div>
